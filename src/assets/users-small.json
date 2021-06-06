@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "nome": "PatrickSouza",
+            "senha": "baguvix1212@bsB$21$#"
+        },
+        {
+            "id": "2",
+            "nome": "RobervalSilva",
+            "senha": "Senha@bsB$21$#"
+        },
+        {
+            "id": "3",
+            "nome": "Jobiscleiton1212",
+            "senha": "Abacaxi@bsB$21$#"
+        },
+        {
+            "id": "4",
+            "nome": "JoseSoares",
+            "senha": "Maca@bsB$21$#"
+        },
+        {
+            "id": "5",
+            "nome": "ClovisBarroso",
+            "senha": "barroso12345@bsB$21$#"
+        }
+    ]
+}

@@ -17,7 +17,7 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     getUserSmall() {
-        return this.http.get<any>('')
+        return this.http.get<any>('assets/users-small.json')
             .toPromise()
             .then(res => <User[]>res.data)
             .then(data => { return data; });

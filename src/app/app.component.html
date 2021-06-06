@@ -6,3 +6,21 @@
 <input type="password" class="p-inputtext-lg" placeholder="Senha de Usuario" pInputText/>
 <button type="button" pButton label="Criar Conta" class="p-button-lg"></button>
 
+<p-table [value]="users">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>SENHA</th>
+            <th>AÇÕES</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.nome}}</td>
+            <td>{{user.senha}}</td>
+            <td>OPÇÕES</td>
+        </tr>
+    </ng-template>
+</p-table>

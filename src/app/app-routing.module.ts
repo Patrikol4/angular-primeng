@@ -1,25 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
+import { ProductnewComponent } from './productnew/productnew.component';
+import { ProductsComponent } from './products/products.component';
+import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: './home/home.module#HomeModule'
+    component: HomeComponent
   },
   {
     path: 'usuario',
-    loadChildren: './user/user.module#UserModule'
+    component: UserComponent
   },
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: ''
+    path: 'products',
+    component: ProductsComponent
+  },
+  {
+    path: 'products/id',
+    component: ProductdetailComponent
+  },
+  {
+    path: 'products/newproduct',
+    component: ProductnewComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

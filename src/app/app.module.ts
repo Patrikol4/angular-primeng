@@ -12,9 +12,13 @@ import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
 import { TableModule } from 'primeng/table';
 
+
 import { UserService } from './userService';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
+import { ProductnewComponent } from './productnew/productnew.component';
 
 
 
@@ -22,7 +26,10 @@ import { UserComponent } from './user/user.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    UserComponent
+    UserComponent,
+    ProductsComponent,
+    ProductdetailComponent,
+    ProductnewComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,7 @@ import { UserComponent } from './user/user.component';
     DropdownModule,
     TableModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -36,11 +36,23 @@ export class AppComponent {
     this.items = [
       {
         label: 'Inicio',
-        icon: 'pi pi-fw pi-home'
+        icon: 'pi pi-fw pi-home',
+        routerLink: '/home'
       },
       {
         label: 'Produtos',
-        icon: 'pi pi-fw pi-briefcase'
+        icon: 'pi pi-fw pi-briefcase',
+        routerLink: '/products'
+      },
+      {
+        label: 'Usuários',
+        icon: 'pi pi-fw pi-users',
+        routerLink: '/users'
+      },
+      {
+        label: 'Meus Dados',
+        icon: 'pi pi-fw pi-user',
+        routerLink: '/usuario'
       }
     ]
   }

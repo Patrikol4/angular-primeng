@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
@@ -20,6 +21,8 @@ import { UserComponent } from './user/user.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
 import { ProductnewComponent } from './productnew/productnew.component';
+import { PasswordModule } from 'primeng/password';
+import { InfoComponent } from './info/info.component';
 
 
 
@@ -30,7 +33,8 @@ import { ProductnewComponent } from './productnew/productnew.component';
     UserComponent,
     ProductsComponent,
     ProductdetailComponent,
-    ProductnewComponent
+    ProductnewComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,8 @@ import { ProductnewComponent } from './productnew/productnew.component';
     TableModule,
     HttpClientModule,
     FormsModule,
+    PasswordModule,
+    CommonModule
 
   ],
   providers: [UserService],

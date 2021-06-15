@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -10,7 +11,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { TableModule } from 'primeng/table';
 import { UserComponent } from './user.component';
 import { UserRoutingModule } from './user.routing.module';
-
+import { PasswordModule } from 'primeng/password';
 
 
 
@@ -26,8 +27,11 @@ import { UserRoutingModule } from './user.routing.module';
     TableModule,
     HttpClientModule,
     FormsModule,
-
-    UserRoutingModule
+    InputTextModule,
+    PasswordModule,
+    UserRoutingModule,
+    CommonModule,
+    ButtonModule
   ]
 })
 export class UserModule { }

@@ -4,74 +4,7 @@
     </div>
 </p-menubar>
 
-
+<div style="margin-left:.25rem">
 <router-outlet></router-outlet>
+</div>
 
-<h1>Angular PrimeNG Spring Boot </h1>
-<h2>Tudo junto</h2>
-<h3>E misturado</h3>
-<p> <i>Este é um mini projeto feito com Angular 11 / PrimeNG / API e PostgreSQL para demonstrar meus conhecimentos. Um
-        crud simples por assim dizer.</i></p>
-<input type="text" class="p-inputtext-lg" placeholder="Nome de Usuario" pInputText [(ngModel)]="dadosUser.nome" />
-<input type="password" class="p-inputtext-lg" placeholder="Senha de Usuario" pInputText [(ngModel)]="dadosUser.senha" />
-<button type="button" pButton label="Criar Conta" class="p-button-lg" (click)="criarUser()"></button>
-
-<p-table [value]="users">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>SENHA</th>
-            <th>AÇÕES</th>
-        </tr>
-    </ng-template>
-    <br />
-    <ng-template pTemplate="body" let-user>
-        <tr>
-            <td>{{user.id}}</td>
-            <td>{{user.nome}}</td>
-            <td>{{user.senha}}</td>
-            <td>OPÇÕES</td>
-        </tr>
-    </ng-template>
-</p-table>
-
-<h2>
-    Último usuário criado:
-</h2>
-
-
-<p-table>
-    <ng-template pTemplate="header">
-        <tr>
-            <th>
-                <i class="pi pi-check"></i>
-                ID
-            </th>
-            <th>NOME</th>
-            <th>SENHA</th>
-            <th>AÇÕES</th>
-        </tr>
-    </ng-template>
-
-
-    <div *ngFor="let users of users">
-        <ng-template pTemplate="body">
-            <tr>
-                <td>
-                    {{mostrarUserCriadoRecente.id}}
-                </td>
-                <td>
-                    {{mostrarUserCriadoRecente.nome}}
-                </td>
-                <td>
-                    {{mostrarUserCriadoRecente.senha}}
-                </td>
-                <td>
-                    OPÇÕES
-                </td>
-            </tr>
-        </ng-template>
-    </div>
-</p-table>
-<button type="button" routerLink="register" pButton label="Criar Conta" icon="pi pi-user" style="margin-left:.25em"></button>

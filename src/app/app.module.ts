@@ -23,6 +23,7 @@ import { ProductdetailComponent } from './productdetail/productdetail.component'
 import { ProductnewComponent } from './productnew/productnew.component';
 import { PasswordModule } from 'primeng/password';
 import { InfoComponent } from './info/info.component';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -48,7 +49,8 @@ import { InfoComponent } from './info/info.component';
     HttpClientModule,
     FormsModule,
     PasswordModule,
-    CommonModule
+    CommonModule,
+    CardModule
 
   ],
   providers: [UserService],

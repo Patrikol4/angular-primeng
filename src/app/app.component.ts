@@ -52,7 +52,7 @@ export class AppComponent {
       {
         label: 'Meus Dados',
         icon: 'pi pi-fw pi-user',
-        routerLink: '/usuario'
+        routerLink: '/user'
       }
     ]
   }

@@ -24,6 +24,7 @@ import { ProductnewComponent } from './productnew/productnew.component';
 import { PasswordModule } from 'primeng/password';
 import { InfoComponent } from './info/info.component';
 import { CardModule } from 'primeng/card';
+import { UsersComponent } from './users/users.component';
 
 
 
@@ -32,6 +33,7 @@ import { CardModule } from 'primeng/card';
     AppComponent,
     HomeComponent,
     UserComponent,
+    UsersComponent,
     ProductsComponent,
     ProductdetailComponent,
     ProductnewComponent,

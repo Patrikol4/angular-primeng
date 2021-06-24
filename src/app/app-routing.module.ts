@@ -6,6 +6,7 @@ import { ProductnewComponent } from './productnew/productnew.component';
 import { ProductsComponent } from './products/products.component';
 import { UserRegisterComponent } from './user/register/user-register.component';
 import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'user',
     component: UserComponent
+  },
+  {
+    path: 'users',
+    component: UsersComponent
   },
   {
     path: 'register',

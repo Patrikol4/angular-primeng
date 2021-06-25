@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'products/newproduct',
     component: ProductnewComponent
+  },
+  {
+    path: '',
+    component: HomeComponent
   }
 ];
 

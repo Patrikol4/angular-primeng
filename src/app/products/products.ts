@@ -1,7 +1,6 @@
 export interface Product {
-    id?: String,
+    id: String,
     name: String,
+    description: String,
     price: String,
-    createdAt: String,
-    image: String,
 }

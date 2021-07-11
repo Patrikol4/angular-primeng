@@ -15,7 +15,7 @@ export class ProductsService {
     constructor(private http: HttpClient) { }
 
     findAll():Observable<Product[]>{
-        const url = `${this.baseUrl}/products`;
+        const url = `${this.baseUrl}/produtos`;
         return this.http.get<Product[]>(url);
     }
 }

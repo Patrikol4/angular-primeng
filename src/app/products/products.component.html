@@ -3,18 +3,33 @@
     <p>Nesta página, você poderá ver o consumo de API. Onde a mesma puxa todo o conteúdo da tabela correspondente para o front end.</p>
 </p-card>
 <br>
-<p-table>
+<p-table [value]="products">
     <ng-template pTemplate="header">
         <tr>
             <th>
                 Todos os Produtos
             </th>
         </tr>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descricao</th>
+            <th>Preco</th>
+        </tr>
     </ng-template>
-    <ng-template pTemplate="body">
+    <ng-template pTemplate="body" let-produtos>
         <tr>
             <td>
-                   Campos Campos
+                {{produtos.id}}
+            </td>
+            <td>
+                {{prodtos.name}}
+            </td>
+            <td>
+                {{produtos.description}}
+            </td>
+            <td>
+                {{produtos.price}}
             </td>
         </tr>
     </ng-template>

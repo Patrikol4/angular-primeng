@@ -19,10 +19,7 @@ import { UserService } from './userService';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductdetailComponent } from './productdetail/productdetail.component';
-import { ProductnewComponent } from './productnew/productnew.component';
 import { PasswordModule } from 'primeng/password';
-import { InfoComponent } from './info/info.component';
 import { CardModule } from 'primeng/card';
 import { UsersComponent } from './users/users.component';
 
@@ -35,9 +32,6 @@ import { UsersComponent } from './users/users.component';
     UserComponent,
     UsersComponent,
     ProductsComponent,
-    ProductdetailComponent,
-    ProductnewComponent,
-    InfoComponent
   ],
   imports: [
     BrowserModule,
